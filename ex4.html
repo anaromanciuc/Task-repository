@@ -1,36 +1,80 @@
 <html>
-  <head>
-    <title>HTML fisier</title>
-  </head>
-  <body>
-    <h1>Titlu 1</h1>
-    <h2>Titlu 2</h2>
-<!-- add first colour-->
-    <div>  
-        <span>Rosu</span>
-        <img
-        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/ABLqW3h/AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC"
-        
-      />
-    </div>
+    <head>
+        <title>HTML fisier</title>
+    </head>
+    <style>
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #008CBA;
+    }
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    </style>
+    <body>
+        <h1>Titlu 1</h1>
+        <h2>Titlu 2</h2>
+<!-- add colour changing-->
+        <div class="container">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/ABLqW3h/AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC"
+     alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">colour changed</div>
+        </div>
+        </div>
 <!-- add h3-->
-    <h3>Titlu 3</h3>
-<!-- add second colour-->
-    <div>
+        <h3>Titlu 3</h3>
+        <div>  
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEX/ABLqW3h/AAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC"
+            />
+        <span>Rosu</span>
+        </div>
+<!-- add blue-->
+        <div>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBwcHBw0HBwcHBwoHBwcHBw8ICQcKFREWIiARHxMYHSggGCYlGxMfITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRktKysrKysrKy0rKysrNzcrKysrKzcrNy0rKysrKysrKysrLSsrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIHA//EABUQAQEAAAAAAAAAAAAAAAAAAAAR/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECBAMF/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oADAMBAAIRAxEAPwDjwqvpR5sjQQQUWCChBBQggoQQUIIKEEFCCChBAEgIoQQUSCAIoAAAAAAADQqveMoKEEFCCChBBQggqEAAgAEEFEggoQQVEgIokVBRIIKhARRIIKJBBQggBB6ijqjKChBACAAQQUIIKEEFEggoQQVEggoRUFEggqJARRIIKEEFEggBFQUIIoqQbFHZGEFCCCiQQUIIKEEFEggqEBFEggoQQUSKiKJBBQggokEFEgyNBBkVSDI0GRBYLBsUdMZQUIIKEEFCCCiQRFCCChBBRIIKJFRGkIIKJBBQggoQQUSCChBBSLkQUhkQaQyNijojKChBBUSCChBBQggoQQUSCChBAEioKEEFCCCiQQUIIKEEFFggqkGVUWCChlFFHrEQUIIKEEFCCCiQQUIIKhAASKgoQQUIIKEEFCCChBBQggqrBBQiIKEEFFgoDcAAgAEABIABBBQggoQQUIIKEEFCCChBBQggoQQUIIKEABYgAQACCgNAAAAAAQACAAQEUIABAAIIoEAAgAEAAgAEAAgCoQBQggqEFAaAAQAABSCAEAFIIKhAAIAoQQUIIKEEFCCCgIKEEFCCChBBQEFAAFAAAAAAAUUQVAAABQEFAQUBBQEFAQUBBQEFAQUBBQEFAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="
+            />
+        <span>albastru</span>
+        </div>
+        <h4>Titlu 4</h4>
+<!-- add yellow-->
+        <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAA1BMVEX/41Fw3ch6AAAAPUlEQVR4nO3BMQEAAADCoPVPbQ0PoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvgyZwAABCrx9CgAAAABJRU5ErkJggg=="/>
         <span>galben</span>
-        <img
-        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBwcHBw0HBwcHBwoHBwcHBw8ICQcKFREWIiARHxMYHSggGCYlGxMfITEhJSkrLi4uFx8zODMsNygtLisBCgoKDQ0NDg0NDysZFRktKysrKysrKy0rKysrNzcrKysrKzcrNy0rKysrKysrKysrLSsrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAAAAQIHA//EABUQAQEAAAAAAAAAAAAAAAAAAAAR/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECBAMF/8QAFhEBAQEAAAAAAAAAAAAAAAAAABES/9oADAMBAAIRAxEAPwDjwqvpR5sjQQQUWCChBBQggoQQUIIKEEFCCChBAEgIoQQUSCAIoAAAAAAADQqveMoKEEFCCChBBQggqEAAgAEEFEggoQQVEgIokVBRIIKhARRIIKJBBQggBB6ijqjKChBACAAQQUIIKEEFEggoQQVEggoRUFEggqJARRIIKEEFEggBFQUIIoqQbFHZGEFCCCiQQUIIKEEFEggqEBFEggoQQUSKiKJBBQggokEFEgyNBBkVSDI0GRBYLBsUdMZQUIIKEEFCCCiQRFCCChBBRIIKJFRGkIIKJBBQggoQQUSCChBBSLkQUhkQaQyNijojKChBBUSCChBBQggoQQUSCChBAEioKEEFCCCiQQUIIKEEFFggqkGVUWCChlFFHrEQUIIKEEFCCCiQQUIIKhAASKgoQQUIIKEEFCCChBBQggqrBBQiIKEEFFgoDcAAgAEABIABBBQggoQQUIIKEEFCCChBBQggoQQUIIKEABYgAQACCgNAAAAAAQACAAQEUIABAAIIoEAAgAEAAgAEAAgCoQBQggqEFAaAAQAABSCAEAFIIKhAAIAoQQUIIKEEFCCCgIKEEFCCChBBQEFAAFAAAAAAAUUQVAAABQEFAQUBBQEFAQUBBQEFAQUBBQEFAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//2Q=="
-      />
-    </div>
-    <h4>Titlu 4</h4>
-<!-- add third colour-->
-    <div>
-        <span>Albastru</span>
-        <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwSzXwwRvciD_qmssLLZSCfIu9jkbflha-34r5gtS9ZFIqfmIOrDHFOZmgffHanCuJYQ&usqp=CAU"/>
-    </div>
-<!-- add h5-->
-    <h5>Titlu 5</h5>
-    <h6>Titlu 6</h6>
-  </body>
+        </div>
+<!-- add h5 and h6-->
+        <h5>Titlu 5</h5>
+        <h6>Titlu 6</h6>
+    </body>
 </html>
