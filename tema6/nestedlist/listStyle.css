@@ -1,0 +1,20 @@
+h1{
+    color: brown;
+    font-family: georgia;
+    text-align: center;
+}
+ul{
+    color: brown;
+    font-family: georgia;
+    text-align: center;
+    border: 1px solid blue;
+    
+}
+ul li{
+    color: blue;
+    text-align: center;
+    background-color: bisque;
+    text: size 1px;
+    font-family: helvetica;
+    border: 1px solid red;
+}
